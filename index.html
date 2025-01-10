@@ -64,6 +64,7 @@
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
 
+      console.log("Attempting to log in with:", email, password);
       auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
           // Redirect to success page

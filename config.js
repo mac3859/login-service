@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID",
-    measurementId: "YOUR_MEASUREMENT_ID"
-};
+    apiKey: "AIzaSyCITo7NqChM9Eo0Bt0Y5g_JycpBXP39kck",
+    authDomain: "login-performance-8c65c.firebaseapp.com",
+    projectId: "login-performance-8c65c",
+    storageBucket: "login-performance-8c65c.firebasestorage.app",
+    messagingSenderId: "644434578006",
+    appId: "1:644434578006:web:f71db8de67520266fa49f7",
+    measurementId: "G-S66B906CYR"
+  };
 export default firebaseConfig;

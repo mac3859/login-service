@@ -48,14 +48,14 @@
     <button type="submit">Login</button>
   </form>
 
-  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
-  
-  <script type="module">
+  <script>
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js';
+    import { getAuth, signInWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js';
     import firebaseConfig from './config.js';
+
     // Initialize Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
 
     // Handle login
     const loginForm = document.getElementById("login-form");
@@ -65,7 +65,7 @@
       const password = document.getElementById("password").value;
 
       console.log("Attempting to log in with:", email, password);
-      auth.signInWithEmailAndPassword(email, password)
+      signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Redirect to success page
           window.location.href = 'success.html';
